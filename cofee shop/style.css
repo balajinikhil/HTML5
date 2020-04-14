@@ -1,0 +1,467 @@
+﻿/*Google-Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel&display=swap");
+
+/*utility classes*/
+img {
+  width: 800px important;
+  height: 600px important;
+}
+a {
+  text-decoration: none;
+}
+.text-white {
+  color: var(--mainwhite);
+}
+.text-align {
+  text-align: center;
+}
+.text-primary {
+  color: var(--primarycolor);
+}
+
+/*Global*/
+.section-center {
+  padding: 2rem;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section-subtitle {
+  font-size: 2rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterspacing);
+  text-transform: capitalize;
+  color: var(--primarycolor);
+}
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+/*clearfix */
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variables*/
+:root {
+  --slantedText: "Grand Hotel", cursive;
+  --primarycolor: #698f3f;
+  --secondarycolor: #fca311;
+  --maindark: #3a3e3b;
+  --mainwhite: #fff;
+  --maingrey: #e5e5e5;
+  --maintransition: all 0.3s ease-in-out;
+  --letterspacing: 0.5rem;
+}
+
+/*body*/
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.5;
+}
+
+/*header*/
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/background.jpeg") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: var(--letterspacing);
+}
+
+.banner-subtitle {
+  font-size: 2rem;
+  font-family: var(--slantedText);
+  color: var(--primarycolor);
+  animation: slidefromright 7s ease-in-out 1;
+}
+
+.banner-title {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  color: var(--mainwhite);
+  animation: slidefromleft 7s ease-in-out 1;
+}
+
+.banner-btn,
+.main-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  background: var(--primarycolor);
+  color: var(--maindark);
+  transition: var(--maintransition);
+  outline: 0.2rem solid var(--primarycolor);
+  outline-offset: 4px;
+  animation: show 5s ease-in-out;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.banner-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@keyframes slidefromright {
+  0% {
+    transform: translateX(1000px);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes slidefromleft {
+  0% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* nav */
+/* nav button */
+.nav-btn {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 1rem 1.3rem;
+  color: var(--primarycolor);
+  animation: bounce 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  0% {
+    transform: scale(1);
+  }
+}
+/* end nav button */
+/* nav bar */
+.navbar {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--maingrey);
+  padding-top: 1rem;
+  padding-left: 2rem;
+  transition: var(--maintransition);
+  transform: translateX(-100%);
+}
+.nav-close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-link {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: var(--maintransition);
+  color: var(--primarycolor);
+}
+.nav-link:hover {
+  padding: 0.5rem;
+  color: var(--maindark);
+}
+/* end nav bar */
+/* end nav */
+
+/*content Divider*/
+.content-divider {
+  height: 0.2rem;
+  background: linear-gradient(
+    to left,
+    var(--primarycolor),
+    var(--secondarycolor),
+    var(--primarycolor)
+  );
+}
+/*end of content divider*/
+
+/*skills*/
+.skills {
+  background: var(--maingrey);
+}
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--maintransition);
+}
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  transition: var(--maintransition);
+  display: inline-block;
+}
+
+.skill-title {
+  size: 0.9rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: var(--letterspacing);
+  margin-bottom: 1.5rem;
+  color: var(--primarycolor);
+  transition: var(--maintransition);
+  font-family: var(--slantedText);
+}
+
+.skill-text {
+  max-width: 13rem;
+  margin: 0 auto;
+}
+.skill:hover {
+  background: var(--primarycolor);
+}
+.skill:hover .skill-title {
+  color: var(--mainwhite);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skill {
+    float: left;
+    width: 25%;
+  }
+}
+/*end of skills*/
+
+/*About */
+.about-pic {
+  width: 100%;
+  display: block;
+  transition: var(--maintransition);
+}
+
+.about-pic-container {
+  background: var(--primarycolor);
+  border: 0.5rem solid var(--primarycolor);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.about-pic-container:hover .about-pic {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-text {
+  margin: 1rem o;
+  max-width: 26rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+/* End Of About */
+/*Product*/
+.products {
+  background: var(--maindark);
+  padding: 2rem 0;
+}
+
+.product-info,
+.product-inventory {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--mainwhite);
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.product {
+  padding: 2rem 0;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+.product-title {
+  color: var(--primarycolor);
+  text-transform: uppercase;
+  letter-spacing: var(--letterspacing);
+  margin-bottom: 1rem;
+}
+.product-price {
+  color: var(--mainwhite);
+  letter-spacing: var(--letter-spacing);
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .product-info {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}
+/*End of product*/
+
+/*contact*/
+.contact {
+  padding: 2rem 0;
+}
+
+.contact-item {
+  margin-bottom: 3rem;
+}
+.contact-title {
+  color: var(--primarycolor);
+  font-weight: bold;
+  font-family: var(--slantedText);
+  letter-spacing: calc(var(--letterspacing) * 2);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contact-text {
+  text-transform: uppercase;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--primarycolor);
+  outline: none;
+  margin: 2rem 0;
+  padding: 1.3rem 0;
+  size: 0.35rem;
+  font-weight: bold;
+}
+
+.form-control::placeholder {
+  color: var(--primarycolor);
+  text-transform: uppercase;
+  letter-spacing: var(--letterspacing);
+}
+
+@media screen and (min-width: 992px) {
+  .contact-info,
+  .contact-form {
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .contact-info {
+    padding: 5rem;
+  }
+}
+/*end contact */
+
+/*footer */
+.footer {
+  background: var(--maindark);
+  text-align: center;
+}
+
+.social-icon {
+  color: var(--mainwhite);
+  font-size: 1.3rem;
+  transition: var(--maintransition);
+  margin-right: 1.3rem;
+}
+
+.social-icon:hover {
+  color: var(--primarycolor);
+}
+
+.footer-text {
+  text-transform: uppercase;
+  color: var(--mainwhite);
+  letter-spacing: var(--letterspacing);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+/* end of footer */

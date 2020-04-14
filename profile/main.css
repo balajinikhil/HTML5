@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --mainwhite: #fff;
+  --maindark: #181b24;
+  --sectiongrey: #f2f2f2;
+  --maingrey: #899495;
+  --orange: #fc5130;
+  --sectionWhite: #fff;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./batman\ 1.jpg") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  color: var(--mainwhite);
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-container {
+  transform: translateY(-10rem);
+}
+
+.banner-title {
+  text-transform: capitalize;
+  font-size: 4rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-jobs {
+  letter-spacing: 0.15rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--maingrey);
+}
+
+/* about */
+.about {
+  padding: 2rem 0;
+  background: var(--sectionWhite);
+}
+.about-center {
+  max-width: 90vw;
+  margin: 2rem auto;
+}
+.about-img {
+  margin: 3rem auto;
+  position: relative;
+}
+
+.about-img-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--maingrey);
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+/* end of about */

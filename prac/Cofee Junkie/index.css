@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./Images/background.jpeg") center/cover no-repeat fixed;
+}
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ul li a {
+  text-decoration: none;
+  display: block;
+  background: black;
+  color: red;
+  height: 50px;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+}

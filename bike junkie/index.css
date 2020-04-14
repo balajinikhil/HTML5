@@ -1,0 +1,41 @@
+﻿/*style sheet*/
+* {
+  box-sizing: border-box;
+}
+.logo {
+  cursor: cell;
+  margin: 0px auto;
+}
+li {
+  list-style-type: none;
+}
+ul li a {
+  background: black;
+  color: red;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 2px;
+  line-height: 50px;
+  width: 100vw;
+}
+#head {
+  text-transform: uppercase;
+  text-align: center;
+  color: #00f;
+}
+.royal {
+  font-style: italic;
+  text-indent: 5rem;
+  background: black;
+  color: red;
+  margin: 0;
+}
+#feature {
+  text-transform: captalize;
+  text-align: center;
+  text-decoration: underline;
+  font-family: notebook;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0%;
+}

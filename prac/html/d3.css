@@ -1,0 +1,25 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: red;
+}
+h4 {
+  color: blue;
+}
+.i {
+  font-style: italic;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #acbfaa;
+}
+.six {
+  text-transform: capitalize;
+  text-indent: 15rem;
+  text-align: center;
+}
+.seven {
+  display: none;
+}
